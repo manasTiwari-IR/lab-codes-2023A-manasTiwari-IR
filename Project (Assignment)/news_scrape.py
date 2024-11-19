@@ -15,9 +15,9 @@ def fetch_webpage(url):
         print(f"Error fetching the webpage: {e}")
         return None
 
-# Function to scrape news headlines and images
+# Function to scrape news headlines and their metadata
 def scrape_data(html, headline_selector, image_selector, para_selector, base_url=None):
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(html, 'html.parser') # Parse the HTML content of the webpage
     
     # Extract headlines
     headlines = soup.select(headline_selector)
