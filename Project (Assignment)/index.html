@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Scraper</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Live News Scraper</h1>
+        <select id="category"">
+            <option value="news">News</option>2
+            <option value="business">Business</option>
+            <option value="innovation">Innovation</option>
+            <option value="culture">Culture</option>
+            <option value="future-planet">Earth</option>
+        </select>
+        <button id="get_news">Get Live News</button>
+
+        <h2 class="topic" ></h2>
+        <hr>
+        <div id="news-container"></div>
+    </div>
+</body>
+
+</html>
