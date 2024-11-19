@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const newsContainer = document.getElementById("news-container");
   getNewsButton.addEventListener("click", async () => {
     const category = document.getElementById("category").value;
-    console.log(category);
+    //console.log(category);
     getNewsButton.disabled = true;
     document.getElementById("category").disabled = true;
+    
     let Topic = category[0].toUpperCase() + category.slice(1);
     document.querySelector(".topic").innerHTML = Topic;
     newsContainer.innerHTML = "<p>Loading...</p>";
